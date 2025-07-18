@@ -7,7 +7,7 @@
 A Streamlit app that detects toxic, insulting, or abusive language in user-generated text.  
 The app uses a fine-tuned [`bert-base-uncased`](https://huggingface.co/bert-base-uncased) model for **multilabel toxic comment classification** trained on the Jigsaw Toxic Comment dataset.
 
----11
+--- 
 
 ## 🛑 LIVE  Demo
 
