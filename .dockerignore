@@ -1,0 +1,37 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.so
+*.log
+
+# Python environments
+venv/
+.venv/
+.env
+
+# Jupyter notebooks and checkpoints
+*.ipynb
+*.ipynb_checkpoints/
+finetune-notebook/
+
+# Reports and generated documentation
+reports/
+
+# Git
+.git/
+.gitignore
+
+# Editor and IDE settings
+.vscode/
+.idea/
+
+# Docker build artifacts
+Dockerfile
+.dockerignore
+
+# OS files
+*.DS_Store
+Thumbs.db
+
+# Streamlit frontend (not part of FastAPI backend image)
+streamlit_frontend/

@@ -1,0 +1,37 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebooks
+*.ipynb_checkpoints
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Streamlit secrets
+streamlit_frontend/.streamlit/secrets.toml
+
+# VSCode config
+.vscode/
+
+# Model files
+*.pt
+*.bin
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Docker
+*.tar
+docker-compose.override.yml
+
+# Ignore built containers and system files
+*.egg-info/
+*.pkl
