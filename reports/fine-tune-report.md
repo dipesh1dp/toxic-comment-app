@@ -6,6 +6,8 @@ Training was tracked with [Weights & Biases](https://wandb.ai/) to ensure transp
 
 👉 [Click here to view the full wandb run report](https://api.wandb.ai/links/dipesh1dp-purwanchal-campu/c682p62i)
 
+👉 [Click here to view the model at HuggingFace](https://huggingface.co/dipeshpandit/bert-toxic)
+
 
 ## Training procedure
 **Training Hardware**: Trained on Kaggle using `NVIDIA TESLA P100` GPU

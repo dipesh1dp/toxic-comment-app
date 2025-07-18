@@ -50,7 +50,7 @@ Enter any comment in the input box and the model predicts which of the following
 ## How to run locally?
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/dipesh1dp/bert-toxic-comment-classifier.git
+git clone https://github.com/dipesh1dp/toxic-comment-app.git
 cd bert-toxic-comment-classifier
 ```
 ### 2. Create and Activate a Virtual Environment (Optional but Recommended)
