@@ -48,12 +48,12 @@ Enter any comment in the input box and the model predicts which of the following
 - Uses sigmoid outputs with label-specific thresholds for prediction
 
 ## How to run locally?
-### 1. Clone the Repository
+1. Clone the Repository
 ```bash
 git clone https://github.com/dipesh1dp/toxic-comment-app.git
 cd bert-toxic-comment-classifier
 ```
-### 2. Create and Activate a Virtual Environment (Optional but Recommended)
+2. Create and Activate a Virtual Environment (Optional but Recommended)
 On Windows:
 ```bash
 python -m venv venv
@@ -64,7 +64,7 @@ On macOS/Linux:
 python3 -m venv venv
 source venv/bin/activate
 ```
-### 3. Set up and run FastAPI backend locally
+3. Set up and run FastAPI backend locally
 ```bash
 # Install FastAPI requirements
 pip install -r requirements.txt
@@ -78,7 +78,7 @@ http://127.0.0.1:8000
 
 You can also see the docs at:
 http://127.0.0.1:8000/docs
-### 4. Set up and run Streamlit frontend
+4. Set up and run Streamlit frontend
 ```bash
 # Install frontend dependencies
 cd streamlit_frontend
@@ -90,13 +90,13 @@ streamlit run streamlit_ui.py
 ```
 The app will start on http://localhost:8501 in your default browser.
 
-### Communication between frontend & backend
+Communication between frontend & backend
 Make sure the Streamlit app (in streamlit_ui.py) sends requests to:
 ```python
 FASTAPI_URL = "http://127.0.0.1:8000"  # or your local backend URL
 ```
 ##  Optional: Run with Docker
-### 1. Build the Docker Image
+1. Build the Docker Image
 For GPU (CUDA 12.1) (NVIDIA RTX or similar):
 ```bash
 # From project root
@@ -109,7 +109,7 @@ docker build -t toxic-comment-api \
   --build-arg BASE_IMAGE=pytorch/pytorch:2.2.2-cpu \
   .
 ```
-### 2. Run the app
+2. Run the app
 Once built, start the FastAPI server with
 ```bash
 docker run -d -p 8000:8000 toxic-comment-api
@@ -148,7 +148,7 @@ Visit: http://localhost:8000/docs to try the API via Swagger UI.
 ```plaintext
 toxic-comment-app/
 ├── app/
-    ├── __init__.py                       
+|    ├── __init__.py                       
 │   ├── main.py
 │   ├── model.py
 │   ├── schemas.py
