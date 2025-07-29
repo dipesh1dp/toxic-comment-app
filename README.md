@@ -76,8 +76,6 @@ uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 Your backend will now be running at:
 http://127.0.0.1:8000
 
-You can also see the docs at:
-http://127.0.0.1:8000/docs
 4. Set up and run Streamlit frontend
 ```bash
 # Install frontend dependencies
