@@ -146,13 +146,14 @@ Visit: http://localhost:8000/docs to try the API via Swagger UI.
 ```plaintext
 toxic-comment-app/
 ├── app/
-|    ├── __init__.py                       
+|   ├── __init__.py                       
 │   ├── main.py
 │   ├── model.py
 │   ├── schemas.py
 |
-├── finetune-notebook/
-|   ├──bert-toxic-finetune.ipynb 
+├── notebook/
+|   ├── bert-toxic-finetune.ipynb
+|   ├── eda-toxic-comment.ipynb
 |
 ├── reports/
 |   ├──fine-tune-report.md         
