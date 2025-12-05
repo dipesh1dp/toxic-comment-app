@@ -11,8 +11,8 @@ The app uses a fine-tuned [`bert-base-uncased`](https://huggingface.co/bert-base
 
 ## 🛑 LIVE  Demo
 
-Try the app online at:  
-👉 [Hugging Face Space](https://huggingface.co/spaces/dipeshpandit/bert-toxic-comment)
+Try the app online at: \
+ [Hugging Face Space](https://huggingface.co/spaces/dipeshpandit/bert-toxic-comment)
 
 ---
 
@@ -39,7 +39,7 @@ Enter any comment in the input box and the model predicts which of the following
 </p>
 
 
-## ℹ️ About the Model
+## About the Model
 
 - **Model:** [`dipeshpandit/bert-toxic`](https://huggingface.co/dipeshpandit/bert-toxic)  
 - **Base model:** [`bert-base-uncased`](https://huggingface.co/bert-base-uncased)  
@@ -115,7 +115,7 @@ docker run -d -p 8000:8000 toxic-comment-api
 Visit: http://localhost:8000/docs to try the API via Swagger UI.
 
 
-## 📈 Performance Metrics 
+## Performance Metrics (Distilbert)
 ### Validation Set Thresholds & F1 Scores
 
 | Label           | Threshold | F1 Score |
@@ -128,7 +128,7 @@ Visit: http://localhost:8000/docs to try the API via Swagger UI.
 | `identity_hate` | 0.55      | 0.6280   |
 
 
-### Test Set Performance Summary
+### Test Set Performance Summary (Distilbert)
 
 | Metric              | Score  |
 |---------------------|--------|
@@ -139,9 +139,9 @@ Visit: http://localhost:8000/docs to try the API via Swagger UI.
 | Precision (Macro)   | 0.5426 |
 | Recall (Macro)      | 0.7092 |
 
-> For more details on training, see the [Fine-tuning Report](reports\fine-tune-report.md)
+> For more details on training, see the [Fine-tuning Report](notebooks/fine-tune-report.md)
 
-## 📁 Project Structure
+## Project Structure
 
 ```plaintext
 toxic-comment-app/
@@ -149,14 +149,15 @@ toxic-comment-app/
 |   ├── __init__.py                       
 │   ├── main.py
 │   ├── model.py
-│   ├── schemas.py
+│   └── schemas.py
 |
 ├── notebook/
 |   ├── bert-toxic-finetune.ipynb
+|   ├── distilbert-toxic-finetune.ipynb
 |   ├── eda-toxic-comment.ipynb
+|   └── fine-tune-report.md
 |
-├── reports/
-|   ├──fine-tune-report.md         
+|            
 │
 ├── streamlit_frontend/
 │   ├── streamlit_ui.py
@@ -170,21 +171,10 @@ toxic-comment-app/
 
 ```
 
-## 🛠️ Built With
+## Built With
 
 - 🤗 [Transformers](https://github.com/huggingface/transformers)  
 - ⚡ [PyTorch](https://pytorch.org/)  
 - ⚙️ [FastAPI](https://fastapi.tiangolo.com/)
 - 🌐 [Streamlit](https://streamlit.io/)  
 - 💬 [Jigsaw Toxic Comment Dataset](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge)  
-
-
-## 👤 Author
-
-Developed by Dipesh Pandit. 
-- [LinekedIn](https://www.linkedin.com/in/dipesh1dp/)
-- [HuggingFace](https://huggingface.co/dipeshpandit)
-
-
-## 📄 License
-This project is licensed under the **Apache License 2.0.**

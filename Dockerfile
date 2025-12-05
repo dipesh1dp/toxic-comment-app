@@ -1,6 +1,3 @@
-#######################################
-# 1. Flexible base image 
-####################################### 
 ARG BASE_IMAGE=pytorch/pytorch:2.2.2-cpu
 FROM ${BASE_IMAGE} 
 

@@ -5,12 +5,12 @@ import numpy as np
 # define label names
 LABELS = ["toxic", "severe_toxic", "obscene", "threat", "insult", "identity_hate"]
 # define optimal thresholds per label
-optimal_thresholds = np.array([0.69, 0.44, 0.60, 0.47, 0.32, 0.55]) 
+optimal_thresholds = np.array([0.57, 0.30, 0.49, 0.39, 0.36, 0.37])
 
 
 def load_model():
     # load model
-    model_name = "dipeshpandit/bert-toxic"
+    model_name = "dipeshpandit/distilbert-toxic-comment"
     print(f"Loading model: {model_name}...")  
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForSequenceClassification.from_pretrained(model_name)
